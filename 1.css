@@ -1,0 +1,62 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+#results {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+#results, #results th, #results td {
+  border: 1px solid black;
+}
+#results th, #results td {
+  padding: 10px;
+}
+/* 搜索框基本样式 */
+#searchInput {
+    width: 50%; /* 宽度占满容器，您也可以根据需要设置为固定宽度 */
+    padding: 8px 12px; /* 内边距，为文本和边框之间提供空间 */
+    margin: 10px 0; /* 外边距，与其他元素之间的空间 */
+    border: 1px solid #ccc; /* 边框颜色和宽度 */
+    border-radius: 4px; /* 边框圆角 */
+    box-sizing: border-box; /* 盒模型，确保padding不会影响最终计算的宽度 */
+    font-size: 16px; /* 字体大小 */
+    background-color: #f8f8f8; /* 背景色 */
+    transition: border-color 0.3s, box-shadow 0.3s; /* 过渡效果，使变化更平滑 */
+}
+
+/* 搜索框聚焦时的样式 */
+#searchInput:focus {
+    border-color: #007bff; /* 聚焦时边框颜色 */
+    outline: none; /* 移除聚焦时的默认轮廓线 */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* 添加阴影以突出显示 */
+    background-color: #fff; /* 聚焦时的背景色，可根据需要调整 */
+}
+#searchButton {
+    padding: 8px 20px; /* 提供足够的内边距以适应文本和图标 */
+    border: 2px solid #007bff; /* 设置边框颜色和宽度 */
+    background-color: #FFFFFF; /* 按钮背景颜色 */
+    color: black; /* 文本颜色 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+    border-radius: 5px; /* 边框圆角 */
+    background-image: url('1.png'); /* 放大镜图标 */
+    background-repeat: no-repeat; /* 背景图像不重复 */
+    background-position: 10px center; /* 背景图像位置 */
+    background-size: 20px; /* 背景图像大小，根据实际情况调整 */
+    text-indent: 30px; /* 文本缩进，为图标留出空间 */
+    transition: background-color 0.3s, border-color 0.3s; /* 过渡动画 */
+}
+
+#searchButton:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+    border-color: #0056b3; /* 鼠标悬停时的边框颜色 */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广州市自动站数据检索</title>
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+<body>
+<h1>广州市自动站数据检索</h1>
+
+<input type="text" id="searchInput" placeholder="输入关键字,仅限广州市,点击站号可查看实况,最多显示10个">
+<button id="searchButton" onclick="search()">搜索</button>
+<table id="results">
+    <thead>
+        <tr>
+            <th>站号</th>
+            <th>站名</th>
+            <th>站址</th>
+            <th>市</th>
+            <th>县</th>
+            <th>经度</th>
+            <th>纬度</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 搜索结果将被填充在这里 -->
+    </tbody>
+</table>
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>要素</th>
+            <th>值</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+    <script src="1.js"></script>
+</body>
+</html>
